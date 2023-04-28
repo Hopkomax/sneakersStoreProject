@@ -1,0 +1,2 @@
+document.querySelector(".cartList__list").addEventListener("click",(function(t){if(t.target.classList.contains("sneaker__inCart__button")||t.target.classList.contains("sneaker__inCart__button-span")){const e=JSON.parse(localStorage.getItem("inCart")),a=t.target.closest("li"),i=e.filter((t=>t.id!==a.id));a.remove(),localStorage.setItem("inCart",JSON.stringify(i))}}));
+//# sourceMappingURL=cart.e6066f2a.js.map
